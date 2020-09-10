@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!-- export API_KEY=pk_843919b84c5e4f48ab9bab7915e05d02 -->
+
+
+<html lang="en">
+    <head>
+      <link rel="icon" href="https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/119082818_753639988808508_1749887634965642727_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=tjdrI0xw3iUAX_7jbfg&_nc_ht=scontent-cph2-1.xx&oh=9973688cf3642e3264a7b6ab49eede23&oe=5F7F95FF">
+      {% block head %}
+      {% endblock %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+        .mynav {
+          background-color: white;
+          color: white;
+          border: 2px solid white;
+          margin: 2px;
+          padding: 2px;
+
+          margin-left: 50px;
+          font-size: 110%;
+          font-family: helvetica;
+        }
+        .title {
+          margin-left: -20px;
+          margin-right: 70px;
+          margin-bottom: 0px;
+          font-family: georgia;
+          font-size: 35px
+        }
+        .lower{
+          margin-top: 8px;
+          margin-right: 25px;
+        }
+        .logo{
+          margin-left: 10px;
+        }
+        .row {
+          display: flex;
+        }
+        .column {
+          flex: 50%;
+          padding: 5px;
+          margin-right:0px;
+        }
+        .column1 {
+          flex: 60%;
+          padding: 5px;
+          margin-right:0px;
+        }
+        .column2 {
+          flex: 40%;
+          padding: 5px;
+          margin-right:0px;
+        }
+        .button {
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+
+        .button1 {
+          background-color: white;
+          color: black;
+          border: 2px solid #018195;
+        }
+
+        .button1:hover {
+          background-color: #018195;
+          color: white;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-sm bg-white navbar-light border">
+          <a href="/">
+            <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/118823268_2933345310102587_5045739429895393555_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=06tcym8M420AX_1S2mZ&_nc_ht=scontent-cph2-1.xx&oh=88234809106a58776ccae9b4bfa483af&oe=5F78F4E2" width="90" height="90" class="d-inline-block align-top logo" alt="">
+          </a>
+
+          <!-- Links -->
+          <ul class="navbar-nav mynav">
+            <li class="title">
+              <a style="color:#018195; text-decoration: none;" href="/">LSE Effective Altruism</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="/events">Events</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="#">Fellowships</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="/getinvolved">Get involved</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="/team">Team</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lower" href="/contact">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+    </head>
+
+    <body style="background-color:#F7F7F7;">
+        <div class="container">
+        {% block body %}
+        {% endblock %}
+        </div>
+    </body>
+
+    <footer style="margin-left:20px">
+        <div style="margin-top:80px; font-family:calibri; font-size:120%; color:black; text-align:left">Effective Altruism Society</div>
+        <div style="font-family:calibri; font-size:120%; color:black; text-align:left">Students' Union</div>
+        <div style="margin-bottom:30px; font-family:calibri; font-size:120%; color:black; text-align:left">London School of Economics (LSE)</div>
+    </footer>
+
+</html>
